@@ -6,6 +6,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import styles from './index.module.css';
 
+const zennUrl = 'https://zenn.dev/takao2704';
+
 const handsonCards = [
   {
     title: 'デバイスからSORACOMへ送信',
@@ -109,11 +111,11 @@ function LatestUpdates() {
     <section className={styles.section}>
       <div className={styles.updatePanel}>
         <div>
-          <Heading as="h2">最新更新情報</Heading>
-          <p>独立したハンズオンを追加、更新しやすいDocusaurus構成とGitHub Pages自動デプロイを用意しています。</p>
+          <Heading as="h2">Blog on Zenn</Heading>
+          <p>関連する技術メモや補足記事はZennのtakao2704ページに集約します。</p>
         </div>
-        <Link className="button button--outline button--primary" to="/blog">
-          更新情報を見る
+        <Link className="button button--outline button--primary" href={zennUrl}>
+          Zennを開く
         </Link>
       </div>
     </section>

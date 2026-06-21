@@ -4,6 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const repositoryName = process.env.GITHUB_REPOSITORY_NAME ?? 'handson_text';
 const organizationName = process.env.GITHUB_REPOSITORY_OWNER ?? 'example';
+const zennUrl = 'https://zenn.dev/takao2704';
 
 const config: Config = {
   title: 'IoTハンズオン集',
@@ -44,18 +45,7 @@ const config: Config = {
           editUrl: ({docPath}) =>
             `https://github.com/${organizationName}/${repositoryName}/edit/main/docs/${docPath}`,
         },
-        blog: {
-          showReadingTime: true,
-          editUrl: ({blogPath}) =>
-            `https://github.com/${organizationName}/${repositoryName}/edit/main/blog/${blogPath}`,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -83,7 +73,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {href: zennUrl, label: 'Blog', position: 'left'},
         {
           href: `https://github.com/${organizationName}/${repositoryName}`,
           label: 'GitHub',
@@ -105,7 +95,7 @@ const config: Config = {
         {
           title: '運用',
           items: [
-            {label: '更新情報', to: '/blog'},
+            {label: 'Blog on Zenn', href: zennUrl},
             {label: 'トラブルシューティング', to: '/docs/troubleshooting/network'},
             {label: 'ライセンス', to: '/docs/appendix/license'},
             {label: 'GitHub', href: `https://github.com/${organizationName}/${repositoryName}`},
