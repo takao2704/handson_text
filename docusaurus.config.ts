@@ -89,7 +89,7 @@ const config: Config = {
           items: [
             {label: 'はじめに', to: '/docs/intro'},
             {label: '準備メモ', to: '/docs/prerequisites'},
-            {label: 'ハンズオン集', to: '/docs/labs'},
+            {label: '目的別カタログ', to: '/docs/labs'},
           ],
         },
         {

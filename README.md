@@ -1,6 +1,6 @@
 # IoTハンズオン集
 
-IoTデバイス、SORACOM、AWSを利用した独立型ハンズオンを公開するためのDocusaurusサイトです。
+IoTデバイス、SORACOM、AWSを利用した独立型ハンズオンを、目的別に公開するためのDocusaurusサイトです。
 
 ## 必要ツール
 

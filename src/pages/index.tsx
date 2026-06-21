@@ -10,22 +10,40 @@ const zennUrl = 'https://zenn.dev/takao2704';
 
 const handsonCards = [
   {
-    title: 'デバイスからSORACOMへ送信',
-    meta: 'SORACOM / Harvest Data / 45分',
-    description: 'LTE接続したデバイスからSORACOM Harvest Dataへテレメトリを送ります。',
-    to: '/docs/labs/01-device-to-soracom',
+    title: 'データを送る',
+    meta: 'Device / SORACOM',
+    description: 'デバイスやサンプル送信スクリプトからSORACOMへデータを送ります。',
+    to: '/docs/catalog/send-data',
   },
   {
-    title: 'SORACOMからAWSへ連携',
-    meta: 'Beam / Funnel / AWS / 60分',
-    description: 'SORACOM Beam / Funnelを使い、AWS IoT CoreやLambdaへデータを渡します。',
-    to: '/docs/labs/02-soracom-to-aws',
+    title: 'データを見る',
+    meta: 'Harvest / S3 / Timestream',
+    description: '届いたデータをSORACOMやAWSで確認、保存、可視化します。',
+    to: '/docs/catalog/view-data',
   },
   {
-    title: 'データを可視化する',
-    meta: 'S3 / Timestream / 45分',
-    description: 'S3やTimestreamに蓄積したデータを確認し、後片付けまで実施します。',
-    to: '/docs/labs/03-visualize-data',
+    title: 'クラウドへ連携する',
+    meta: 'Beam / Funnel / AWS',
+    description: 'SORACOMからAWS IoT CoreやLambdaへデータを渡します。',
+    to: '/docs/catalog/cloud-integration',
+  },
+  {
+    title: 'デバイスを準備する',
+    meta: 'Raspberry Pi / ESP32 / LTE',
+    description: 'ハンズオンで使うデバイス、SIM、通信モジュールを確認します。',
+    to: '/docs/catalog/prepare-device',
+  },
+  {
+    title: 'ネットワークを確認する',
+    meta: 'Air / DNS / TLS / IAM',
+    description: '回線状態、疎通、証明書、権限の問題を切り分けます。',
+    to: '/docs/catalog/check-network',
+  },
+  {
+    title: '後片付け・課金確認',
+    meta: 'Cleanup / Cost',
+    description: '作成したSORACOMとAWSリソースを整理し、課金対象を確認します。',
+    to: '/docs/catalog/cleanup-cost',
   },
 ];
 
@@ -50,7 +68,7 @@ function HomeHero() {
           </p>
           <div className={styles.heroActions}>
             <Link className="button button--primary button--lg" to="/docs/labs">
-              ハンズオンを見る
+              目的から探す
             </Link>
             <Link className="button button--secondary button--lg" to="/docs/prerequisites">
               準備メモを見る
@@ -69,8 +87,8 @@ function HandsonCatalog() {
   return (
     <section className={styles.section}>
       <div className={styles.sectionHeader}>
-        <Heading as="h2">ハンズオンカタログ</Heading>
-        <p>各ページは単体で開いて使えるように、必要な前提、作るもの、後片付けをページ内にまとめます。</p>
+        <Heading as="h2">目的別カタログ</Heading>
+        <p>サービス名ではなく、読者がやりたいことから必要なページへ移動できるようにします。</p>
       </div>
       <div className={styles.pathGrid}>
         {handsonCards.map((path) => (
