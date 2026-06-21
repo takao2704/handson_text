@@ -1,5 +1,5 @@
 ---
-title: 02 SORACOMからAWSへ連携
+title: SORACOMからAWSへ連携
 description: SORACOM BeamまたはFunnelからAWSへデータを連携するハンズオン
 slug: /labs/02-soracom-to-aws
 ---
@@ -18,9 +18,9 @@ SORACOMとAWSの連携を体験したい受講者。
 
 60分
 
-## 前提条件
+## このハンズオンの前提
 
-- [デバイスからSORACOMへ送信](./01-device-to-soracom.md)を完了済み
+- デバイス、テストクライアント、またはサンプル送信スクリプトからSORACOMへデータを送信できる
 - AWSアカウントにログインできる
 - 必要なIAM権限が付与されている
 
@@ -30,7 +30,7 @@ SORACOMとAWSの連携を体験したい受講者。
 - AWS IoT Core
 - AWS Lambda
 
-## 全体構成
+## 構成例
 
 ```mermaid
 flowchart LR
@@ -72,6 +72,7 @@ AWS IoT CoreのルールとLambda関数を作成します。
 
 Lambda関数、IoTルール、認証情報、SORACOMグループ設定を削除または無効化します。
 
-## 次に進む
+## 関連ページ
 
-[データの可視化](./03-visualize-data.md)へ進みます。
+- デバイス送信から確認したい場合は[デバイスからSORACOMへ送信](./01-device-to-soracom.md)を参照します。
+- 保存したデータを確認する場合は[データの可視化](./03-visualize-data.md)を参照します。

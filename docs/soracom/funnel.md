@@ -27,6 +27,7 @@ AWS IoT Core、Amazon Kinesisなど、イベントで利用する連携先を決
 AWSアクセスキーやSORACOM認証情報は、スクリーンショットや教材本文に実値を含めないでください。
 :::
 
-## 次に進む
+## 関連ページ
 
-[AWS IoT Core](../aws/iot-core.md)へ進みます。
+- 連携先にAWS IoT Coreを使う場合は[AWS IoT Core](../aws/iot-core.md)を参照します。
+- ハンズオン形式で試す場合は[SORACOMからAWSへ連携](../labs/02-soracom-to-aws.md)を参照します。

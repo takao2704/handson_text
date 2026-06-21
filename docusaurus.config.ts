@@ -6,8 +6,8 @@ const repositoryName = process.env.GITHUB_REPOSITORY_NAME ?? 'handson_text';
 const organizationName = process.env.GITHUB_REPOSITORY_OWNER ?? 'example';
 
 const config: Config = {
-  title: 'IoTハンズオン教材',
-  tagline: 'IoTデバイス、SORACOM、AWSをつなぐ実践型ワークショップ教材',
+  title: 'IoTハンズオン集',
+  tagline: 'IoTデバイス、SORACOM、AWSを題材にした独立型ハンズオンのカタログ',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -70,9 +70,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'IoTハンズオン教材',
+      title: 'IoTハンズオン集',
       logo: {
-        alt: 'IoTハンズオン教材',
+        alt: 'IoTハンズオン集',
         src: 'img/iot-handson-logo.svg',
       },
       items: [
@@ -98,8 +98,8 @@ const config: Config = {
           title: '教材',
           items: [
             {label: 'はじめに', to: '/docs/intro'},
-            {label: '前提条件', to: '/docs/prerequisites'},
-            {label: 'ハンズオン', to: '/docs/labs/01-device-to-soracom'},
+            {label: '準備メモ', to: '/docs/prerequisites'},
+            {label: 'ハンズオン集', to: '/docs/labs'},
           ],
         },
         {

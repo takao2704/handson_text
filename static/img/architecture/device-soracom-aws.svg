@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
-  <title id="title">IoTデバイスからAWSまでの全体構成</title>
-  <desc id="desc">IoT DeviceからSORACOMを経由しAWS IoT Core、Lambda、S3またはTimestreamへ連携する構成図</desc>
+  <title id="title">IoTハンズオンで使う構成要素</title>
+  <desc id="desc">IoT Device、SORACOM、AWSサービスを個別ハンズオンの題材として並べた構成図</desc>
   <rect width="920" height="520" rx="18" fill="#f8fbfa"/>
   <rect x="48" y="58" width="824" height="404" rx="16" fill="#ffffff" stroke="#d9e3e1"/>
-  <text x="86" y="112" fill="#102a32" font-family="Arial, sans-serif" font-size="28" font-weight="700">IoT Handson Architecture</text>
-  <text x="86" y="146" fill="#52666d" font-family="Arial, sans-serif" font-size="16">Device telemetry flows through SORACOM into AWS services.</text>
+  <text x="86" y="112" fill="#102a32" font-family="Arial, sans-serif" font-size="28" font-weight="700">IoT Handson Building Blocks</text>
+  <text x="86" y="146" fill="#52666d" font-family="Arial, sans-serif" font-size="16">Pick the device, SORACOM, or AWS topic you want to try.</text>
 
   <g transform="translate(86 220)">
     <rect width="142" height="96" rx="8" fill="#e8f4f3" stroke="#b8d7d3"/>
@@ -43,6 +43,6 @@
 
   <g transform="translate(89 374)">
     <rect width="736" height="48" rx="8" fill="#f5f8f7" stroke="#d9e3e1"/>
-    <text x="24" y="30" fill="#52666d" font-family="Arial, sans-serif" font-size="14">Hands-on path: connect device → verify SORACOM → forward to AWS → visualize and clean up resources</text>
+    <text x="24" y="30" fill="#52666d" font-family="Arial, sans-serif" font-size="14">Standalone labs: device checks / SORACOM routing / AWS storage / visualization / cleanup</text>
   </g>
 </svg>

@@ -27,7 +27,11 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'ハンズオン',
+      label: 'ハンズオン集',
+      link: {
+        type: 'doc',
+        id: 'labs/index',
+      },
       items: [
         'labs/device-to-soracom',
         'labs/soracom-to-aws',

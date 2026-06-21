@@ -123,6 +123,15 @@
   margin-bottom: 0.8rem;
 }
 
+.pathMeta {
+  color: var(--ifm-color-primary-dark);
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 0.7rem;
+}
+
 .pathCard p {
   color: #52666d;
   line-height: 1.75;
@@ -184,6 +193,21 @@
   padding: 1.5rem;
 }
 
+.heroActions a {
+  box-sizing: border-box;
+}
+
+.heroVisual,
+.pathCard,
+.updatePanel,
+.requirementList {
+  max-width: 100%;
+}
+
+.heroVisual img {
+  min-width: 0;
+}
+
 @media screen and (max-width: 996px) {
   .heroContent,
   .bandContent {
@@ -209,6 +233,18 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .heroActions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .heroActions a {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .heroContent,
   .section,
@@ -224,15 +260,5 @@
 
   .heroText p {
     font-size: 1rem;
-  }
-
-  .heroActions {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .heroActions a {
-    text-align: center;
-    width: 100%;
   }
 }

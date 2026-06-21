@@ -27,6 +27,7 @@ Beam、Funnel、Harvestなど、後続の連携先に応じた設定に進みま
 この段階では、デバイスからSORACOMまでの通信が成立していることを切り分けるのが目的です。
 :::
 
-## 次に進む
+## 関連ページ
 
-[SORACOM Harvest](./harvest.md)または[デバイスからSORACOMへ送信](../labs/01-device-to-soracom.md)へ進みます。
+- SORACOMに届いたデータを見る場合は[SORACOM Harvest](./harvest.md)を参照します。
+- 送信手順から確認する場合は[デバイスからSORACOMへ送信](../labs/01-device-to-soracom.md)を参照します。

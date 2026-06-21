@@ -29,6 +29,6 @@ SORACOMユーザーコンソールでグループにBeam設定を追加します
 - TLS設定が合っていない
 - デバイスが所属するグループにBeam設定がない
 
-## 次に進む
+## 関連ページ
 
-[SORACOMからAWSへ連携](../labs/02-soracom-to-aws.md)へ進みます。
+- AWSへ転送するハンズオンは[SORACOMからAWSへ連携](../labs/02-soracom-to-aws.md)を参照します。

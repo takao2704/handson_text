@@ -34,6 +34,7 @@ SIMグループでHarvest Dataを有効化します。
 
 Harvest Dataに最新のデータ点が表示されること。
 
-## 次に進む
+## 関連ページ
 
-[SORACOMからAWSへ連携](../labs/02-soracom-to-aws.md)へ進みます。
+- Harvest Dataだけで確認する場合はこのページで完結します。
+- AWSへデータを渡す場合は[SORACOMからAWSへ連携](../labs/02-soracom-to-aws.md)を参照します。

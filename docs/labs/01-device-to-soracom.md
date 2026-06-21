@@ -1,5 +1,5 @@
 ---
-title: 01 デバイスからSORACOMへ送信
+title: デバイスからSORACOMへ送信
 description: デバイスからSORACOM Harvest Dataへデータを送信する基本ハンズオン
 slug: /labs/01-device-to-soracom
 ---
@@ -18,9 +18,8 @@ SORACOM Airの基本通信とデータ送信を体験したい受講者。
 
 45分
 
-## 前提条件
+## このハンズオンの前提
 
-- [前提条件](../prerequisites.md)を確認済み
 - SORACOM IoT SIMが登録済み
 - デバイスからインターネット疎通できる
 
@@ -30,7 +29,7 @@ SORACOM Airの基本通信とデータ送信を体験したい受講者。
 - SORACOM IoT SIM
 - SORACOM Harvest Data
 
-## 全体構成
+## 構成例
 
 ```mermaid
 flowchart LR
@@ -71,6 +70,8 @@ flowchart LR
 
 必要に応じてHarvest Dataを無効化し、不要なデータを削除します。
 
-## 次に進む
+## 関連ページ
 
-[SORACOMからAWSへ連携](./02-soracom-to-aws.md)へ進みます。
+- [SORACOM Harvest](../soracom/harvest.md)
+- [SORACOM Air](../soracom/air.md)
+- AWS連携まで試す場合は[SORACOMからAWSへ連携](./02-soracom-to-aws.md)を参照します。
