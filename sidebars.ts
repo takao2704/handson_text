@@ -46,7 +46,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Appendix',
-      items: ['appendix/glossary', 'appendix/references'],
+      items: ['appendix/glossary', 'appendix/references', 'appendix/license'],
     },
   ],
 };

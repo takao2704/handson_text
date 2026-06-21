@@ -107,11 +107,12 @@ const config: Config = {
           items: [
             {label: '更新情報', to: '/blog'},
             {label: 'トラブルシューティング', to: '/docs/troubleshooting/network'},
+            {label: 'ライセンス', to: '/docs/appendix/license'},
             {label: 'GitHub', href: `https://github.com/${organizationName}/${repositoryName}`},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} IoT Handson Docs.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Takao Ide. Docs: CC BY 4.0. Code: MIT.`,
     },
     prism: {
       theme: prismThemes.github,
