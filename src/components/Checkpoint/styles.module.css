@@ -1,0 +1,17 @@
+.checkpoint {
+  background: #eef8f7;
+  border: 1px solid #b8d7d3;
+  border-radius: 8px;
+  margin: 1.25rem 0;
+  padding: 1rem;
+}
+
+.checkpoint strong {
+  color: #0b6f7f;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.checkpoint p:last-child {
+  margin-bottom: 0;
+}

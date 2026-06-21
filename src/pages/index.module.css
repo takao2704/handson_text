@@ -1,0 +1,238 @@
+.hero {
+  background:
+    linear-gradient(120deg, rgba(11, 76, 92, 0.08), rgba(236, 248, 246, 0.94)),
+    #ffffff;
+  border-bottom: 1px solid var(--site-border);
+}
+
+.heroContent {
+  align-items: center;
+  box-sizing: border-box;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  margin: 0 auto;
+  max-width: 1180px;
+  min-height: 520px;
+  padding: 4.5rem 1.5rem 3.5rem;
+  width: 100%;
+}
+
+.heroText h1 {
+  color: #102a32;
+  font-size: 3.4rem;
+  line-height: 1.08;
+  margin-bottom: 1rem;
+}
+
+.heroText,
+.heroVisual {
+  min-width: 0;
+}
+
+.heroText p {
+  color: #52666d;
+  font-size: 1.18rem;
+  line-height: 1.85;
+  margin: 0;
+  max-width: 42rem;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.heroVisual {
+  background: #ffffff;
+  border: 1px solid var(--site-border);
+  border-radius: 8px;
+  box-shadow: 0 22px 50px rgba(15, 41, 52, 0.12);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.heroVisual img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.section {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+
+.sectionHeader {
+  max-width: 680px;
+}
+
+.sectionHeader h2,
+.band h2,
+.updatePanel h2 {
+  color: var(--site-ink);
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.sectionHeader p,
+.band p,
+.updatePanel p {
+  color: var(--site-muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.pathGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.7rem;
+}
+
+.pathCard {
+  background: #ffffff;
+  border: 1px solid var(--site-border);
+  border-radius: 8px;
+  color: inherit;
+  min-height: 190px;
+  padding: 1.4rem;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.pathCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 16px 36px rgba(15, 41, 52, 0.12);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.pathCard h3 {
+  color: #102a32;
+  font-size: 1.18rem;
+  line-height: 1.45;
+  margin-bottom: 0.8rem;
+}
+
+.pathCard p {
+  color: #52666d;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.band {
+  background: #f5f8f7;
+  border-bottom: 1px solid var(--site-border);
+  border-top: 1px solid var(--site-border);
+}
+
+.band h2 {
+  color: #102a32;
+}
+
+.band p {
+  color: #52666d;
+}
+
+.bandContent {
+  align-items: start;
+  box-sizing: border-box;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 3.5rem 1.5rem;
+  width: 100%;
+}
+
+.requirementList {
+  background: #ffffff;
+  border: 1px solid var(--site-border);
+  border-radius: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0.8rem;
+}
+
+.requirementList li {
+  border-bottom: 1px solid var(--site-border);
+  color: #102a32;
+  padding: 0.9rem 0.8rem;
+}
+
+.requirementList li:last-child {
+  border-bottom: 0;
+}
+
+.updatePanel {
+  align-items: center;
+  border: 1px solid var(--site-border);
+  border-radius: 8px;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroContent,
+  .bandContent {
+    grid-template-columns: 1fr;
+  }
+
+  .heroContent {
+    min-height: auto;
+    padding-top: 3rem;
+  }
+
+  .heroText h1 {
+    font-size: 2.4rem;
+  }
+
+  .pathGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .updatePanel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroContent,
+  .section,
+  .bandContent {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .heroText h1 {
+    font-size: 2.05rem;
+    line-height: 1.18;
+  }
+
+  .heroText p {
+    font-size: 1rem;
+  }
+
+  .heroActions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .heroActions a {
+    text-align: center;
+    width: 100%;
+  }
+}

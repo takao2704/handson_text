@@ -1,0 +1,53 @@
+:root {
+  --ifm-color-primary: #0b6f7f;
+  --ifm-color-primary-dark: #0a6472;
+  --ifm-color-primary-darker: #095e6c;
+  --ifm-color-primary-darkest: #074e59;
+  --ifm-color-primary-light: #0c7a8c;
+  --ifm-color-primary-lighter: #0d8092;
+  --ifm-color-primary-lightest: #0f91a5;
+  --ifm-code-font-size: 94%;
+  --ifm-heading-font-weight: 700;
+  --ifm-navbar-shadow: none;
+  --ifm-toc-border-color: #d9e3e1;
+  --docusaurus-highlighted-code-line-bg: rgba(11, 111, 127, 0.1);
+  --site-ink: #102a32;
+  --site-muted: #52666d;
+  --site-border: #d9e3e1;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4fc3cf;
+  --ifm-color-primary-dark: #39bac8;
+  --ifm-color-primary-darker: #31b3c1;
+  --ifm-color-primary-darkest: #2993a0;
+  --ifm-color-primary-light: #65ccd6;
+  --ifm-color-primary-lighter: #70d0da;
+  --ifm-color-primary-lightest: #91dce4;
+  --docusaurus-highlighted-code-line-bg: rgba(79, 195, 207, 0.2);
+  --site-ink: #edf7f7;
+  --site-muted: #b6c8cc;
+  --site-border: #263f46;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--site-border);
+}
+
+.button {
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.theme-doc-markdown h2 {
+  border-top: 1px solid var(--site-border);
+  padding-top: 2rem;
+}
+
+.theme-admonition {
+  border-radius: 8px;
+}
