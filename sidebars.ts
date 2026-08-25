@@ -31,6 +31,11 @@ const sidebars: SidebarsConfig = {
         id: 'catalog/cloud-integration',
       },
       items: [
+        {
+          type: 'link',
+          label: 'Napter・AWS IoT Core・Beam MQTTハンズオン',
+          href: 'https://github.com/takao2704/aws-iot-soracom-mqtt-handson',
+        },
         'labs/soracom-to-aws',
         'soracom/beam',
         'soracom/funnel',

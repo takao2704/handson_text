@@ -11,6 +11,7 @@ SORACOMで受け取ったデータをAWS IoT Core、Lambda、S3、Timestreamな�
 
 | ページ | 使う場面 |
 |---|---|
+| [SORACOM Napter・AWS IoT Core・SORACOM Beamで学ぶMQTTハンズオン](https://github.com/takao2704/aws-iot-soracom-mqtt-handson) | Raspberry PiからAWS IoT Coreへ直接接続したあと、証明書をSORACOM側へ移してBeam経由へ切り替える約3時間のハンズオンを実施したい |
 | [SORACOMからAWSへ連携](../labs/02-soracom-to-aws.md) | SORACOM BeamまたはFunnelからAWSへ送る流れを試したい |
 | [SORACOM Beam](../soracom/beam.md) | HTTP、MQTT、TCPなどを転送したい |
 | [SORACOM Funnel](../soracom/funnel.md) | AWS IoT Coreなどへ直接連携したい |
