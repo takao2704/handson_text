@@ -36,6 +36,28 @@ const config: Config = {
 
   themes: ['@docusaurus/theme-mermaid'],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mqtt-handson',
+        path: './external/aws-iot-soracom-mqtt-handson',
+        routeBasePath: 'docs/labs/aws-iot-soracom-mqtt-handson',
+        sidebarPath: './sidebars-mqtt-handson.ts',
+        include: [
+          'README.md',
+          'chapters/**/*.md',
+          'instructor/**/*.md',
+          'references.md',
+        ],
+        editUrl: ({docPath}: {docPath: string}) =>
+          `https://github.com/takao2704/aws-iot-soracom-mqtt-handson/edit/main/${docPath}`,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',

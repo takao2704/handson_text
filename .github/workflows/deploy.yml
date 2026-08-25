@@ -5,6 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '17 0 * * *'
 
 permissions:
   contents: read
@@ -24,6 +26,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Checkout MQTT hands-on content
+        uses: actions/checkout@v4
+        with:
+          repository: takao2704/aws-iot-soracom-mqtt-handson
+          path: external/aws-iot-soracom-mqtt-handson
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4

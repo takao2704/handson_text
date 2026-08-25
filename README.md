@@ -11,11 +11,15 @@ IoTデバイス、SORACOM、AWSを利用した独立型ハンズオンを、目�
 ## ローカル開発
 
 ```bash
+git clone https://github.com/takao2704/aws-iot-soracom-mqtt-handson.git \
+  external/aws-iot-soracom-mqtt-handson
 pnpm install
 pnpm start
 ```
 
 ブラウザで `http://localhost:3000/` を開きます。
+
+`aws-iot-soracom-mqtt-handson` のMarkdownは、このサイトへコピーせず、Docusaurusの追加docsとしてビルド時に直接読み込みます。本文の正本は外部リポジトリだけです。GitHub Actionsでは外部リポジトリを自動でチェックアウトし、毎日の定期ビルドでも更新を取り込みます。
 
 ## ビルド確認
 
